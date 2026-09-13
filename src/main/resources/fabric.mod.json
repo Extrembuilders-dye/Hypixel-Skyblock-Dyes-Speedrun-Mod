@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "dye-speedrun",
+  "version": "${version}",
+  "name": "Dye Community Speedrun",
+  "description": "Official client mod for the Dye Community vanilla dye speedrun event.",
+  "authors": ["Dye Community"],
+  "license": "All-Rights-Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["community.dye.speedrun.client.DyeSpeedrunClient"]
+  },
+  "mixins": [
+    {
+      "config": "dye-speedrun.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  }
+}
